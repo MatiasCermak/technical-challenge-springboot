@@ -35,7 +35,7 @@ public class ClientResponse {
         calendar.setTime(this.birthDate);
         calendar.add(Calendar.YEAR,
                 this.age > BusinessConstants.LIFE_EXPECTANCY?
-                        5 : BusinessConstants.LIFE_EXPECTANCY - this.age);
+                        5 : BusinessConstants.LIFE_EXPECTANCY);
         this.estimatedDeathDate = calendar.getTime();
     }
 
