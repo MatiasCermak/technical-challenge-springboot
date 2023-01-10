@@ -1,0 +1,11 @@
+spring:
+  env: dev
+  datasource:
+    url: jdbc:h2:mem:challenge-backend
+    driverClassName: org.h2.Driver
+    username: sa
+    password: password
+
+server:
+  port: 8080
+  forward-headers-strategy: FRAMEWORK
